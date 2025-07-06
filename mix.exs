@@ -45,6 +45,11 @@ defmodule Vireo.MixProject do
       {:telemetry_metrics, "~> 0.6"},
       {:telemetry_poller, "~> 1.0"},
       {:gettext, "~> 0.20"},
+      {:ex_aws, "~> 2.5"},
+      {:ex_aws_s3, "~> 2.5"},
+      {:poison, "~> 6.0"},
+      {:hackney, "~> 1.24"},
+      {:sweet_xml, "~> 0.7.5"},
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
       {:plug_cowboy, "~> 2.5"}
