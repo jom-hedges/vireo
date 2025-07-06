@@ -18,6 +18,9 @@ defmodule VireoWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+
+    post "/uploads/presign", UploadController, :presign
+    get "/video/:filename", UploadController, :show_video
   end
 
   # Other scopes may use custom stacks.
