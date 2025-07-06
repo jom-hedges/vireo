@@ -59,7 +59,7 @@ config :logger, :console,
 
 # Configures S3 client access for Tigris
 config :ex_aws,
-  debug_requests: true, 
+  debug_requests: true,
   json_codec: Jason,
   access_key_id: {:system, "AWS_ACCESS_KEY_ID"},
   secret_access_key: {:system, "AWS_SECRET_ACCESS_KEY"}
@@ -67,7 +67,7 @@ config :ex_aws,
 config :ex_aws, :s3,
   scheme: "https://",
   host: "fly.storage.tigris.dev",
-  region: auto
+  region: "auto"
 
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
