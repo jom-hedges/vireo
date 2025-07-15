@@ -51,7 +51,7 @@ if config_env() == :prod do
     secret_key_base: secret_key_base
 
     config :ex_aws,
-      debug requests: true,
+      debug_requests: true,
       json_codec: Jason,
       access_key_id: {:system, "AWS_ACCESS_KEY_ID"},
       secret_access_key: {:system, "AWS_SECRET_ACCESS_KEY"}
